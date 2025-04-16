@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Leen Alaa Ghunaim | CV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -11,17 +12,21 @@
       margin: 0;
       padding: 0;
     }
+
     header {
-      padding: 40px 20px 10px;
+      padding: 30px 20px 10px;
     }
+
     h1 {
       color: #333;
       margin-bottom: 5px;
     }
+
     p {
       margin-top: 0;
       color: #555;
     }
+
     .button {
       display: inline-block;
       padding: 12px 25px;
@@ -30,16 +35,29 @@
       text-decoration: none;
       border-radius: 5px;
       font-size: 16px;
-      margin: 20px 0;
+      margin: 15px 10px;
     }
+
     .button:hover {
       background-color: #0056b3;
     }
+
+    .iframe-container {
+      width: 100%;
+      height: 90vh;
+      max-width: 100%;
+    }
+
     iframe {
-      width: 90%;
-      height: 600px;
+      width: 100%;
+      height: 100%;
       border: none;
-      margin-bottom: 40px;
+    }
+
+    @media (max-width: 768px) {
+      iframe {
+        height: 85vh;
+      }
     }
   </style>
 </head>
@@ -47,9 +65,13 @@
   <header>
     <h1>Leen Alaa Ghunaim</h1>
     <p>Software Engineering Student</p>
-    <a class="button" href="Leen_Ghunaim_CV.pdf" download>Download My CV</a>
+    <a class="button" href="Leen_Ghunaim_CV.pdf" download>Download CV</a>
+    <a class="button" href="Leen_Ghunaim_CV.pdf" target="_blank">View Fullscreen</a>
   </header>
 
-  <iframe src="Leen_Ghunaim_CV.pdf"></iframe>
+  <div class="iframe-container">
+    <iframe src="Leen_Ghunaim_CV.pdf"></iframe>
+  </div>
 </body>
 </html>
+
